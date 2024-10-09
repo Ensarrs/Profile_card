@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(16, 51, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    padding: 20px;
+}
+
+.card {
+    width: 320px;
+    height: 400px;
+    background-color: #002C2C; 
+    border-radius: 8px;
+    position: relative;
+}
+
+.img-box {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    background-color: #002C2C;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.card:hover .img-box {
+    top: 10px;
+    bottom: 125px;
+    right: 10px;
+    left: 10px;
+}
+
+.card:hover img {
+    border-radius: 1000px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+
+.info {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    left: 10px;
+    text-align: center;
+    height: 80px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #00b3b3; /* Changed to match the text color in the form */
+}
+
+p {
+    color: wheat; /* Changed to match the overall text color */
+}
+
+button {
+    position: absolute;
+    background-color: #00b3b3; /* Changed to match send-button background color */
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    left: 75px;
+    margin: 8px;
+    font-size: 20px;
+    padding: 10px 15px;
+    color: #002C2C; /* Changed to match send-button text color */
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+    background-color: #002C2C; /* Hover state matching send-button */
+    color: #00b3b3;
+    box-shadow: 0 4px 12px rgba(0, 179, 179, 0.4);
+}
+button a {
+    color: inherit;
+    text-decoration: none;
+}
